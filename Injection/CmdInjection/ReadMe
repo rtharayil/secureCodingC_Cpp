@@ -1,0 +1,2 @@
+docker build -t cpp-cmd-injection .
+docker run -p 8080:8080 cpp-cmd-injection
